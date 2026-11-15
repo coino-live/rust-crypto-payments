@@ -69,7 +69,7 @@ impl Stub {
                 let Ok(stream) = stream else { continue };
                 let handler = Arc::clone(&handler);
                 let seen = Arc::clone(&shared);
-                thread::spawn(move || serve(stream, &handler, &seen));
+                thread::spawn(move || serve(stream, &*handler, &seen));
             }
         });
         Stub { base_url: format!("http://127.0.0.1:{port}/api/v2"), seen }

@@ -5,7 +5,6 @@ edition = "2021"
 description = "Coino Live API v2 client: accept crypto payments, custody users, withdrawals and webhook verification."
 license = "MIT"
 repository = "https://github.com/coino-live/rust-crypto-payments"
-homepage = "https://coino.live/api-guide"
 documentation = "https://coino.live/api-guide"
 readme = "README.md"
 keywords = ["crypto", "payments", "bitcoin", "usdt", "coinolive"]
