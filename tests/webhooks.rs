@@ -64,6 +64,7 @@ fn compares_hex_like_php_hash_equals() {
 }
 
 #[test]
+#[allow(clippy::unnecessary_to_owned)] // checks that owned String and Vec<u8> bodies are accepted too
 fn a_good_signature_returns_the_event() {
     let header = sign(now(), BODY, SECRET);
     assert_eq!(verify(BODY, &header, SECRET).expect("valid")["data"]["id"], "01pay");
