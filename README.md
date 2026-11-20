@@ -22,7 +22,13 @@ Coino Live is a crypto payment gateway that accepts **117 assets on 11 networks*
 
 ## Installation
 
-Add the crate to `Cargo.toml` as a git dependency from this repository:
+Add the crate from [crates.io](https://crates.io/crates/coinolive):
+
+```bash
+cargo add coinolive
+```
+
+Or add it to `Cargo.toml` as a git dependency from this repository:
 
 ```toml
 [dependencies]
